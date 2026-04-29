@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIVIO — AI Cinematic Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="splash">
+        <h1 class="logo-big">AIVIO</h1>
+        <p>Premium AI Movie Engine</p>
+        <button class="enter-btn" onclick="enterApp()">OPEN STUDIO</button>
+    </div>
+
+    <div id="app" style="display:none;">
+        <aside class="sidebar">
+            <div class="logo">AIVIO</div>
+            <nav>
+                <div class="nav-item active">🎬 AI Studio</div>
+                <div class="nav-item">📜 Script Writer</div>
+                <div class="nav-item">🌐 Explorer</div>
+                <div class="nav-item">⚙️ Settings</div>
+            </nav>
+            <div class="vip-tag">VIP ACCESS</div>
+        </aside>
+
+        <main class="main-content">
+            <div class="input-card">
+                <h2>Create Your Scene</h2>
+                <input type="text" id="char-name" placeholder="Character Name (e.g. Ben 10)">
+                <textarea id="prompt-input" placeholder="Describe what happens... (e.g. Fighting in a futuristic city)"></textarea>
+                <button id="gen-btn" onclick="generate()">GENERATE CINEMATIC VIDEO</button>
+            </div>
+
+            <div class="output-card">
+                <div id="status-text">Ready to Create...</div>
+                <div id="result-display"></div>
+                <button id="dl-btn" style="display:none;">DOWNLOAD 4K VIDEO</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
